@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Казино Слот</title>
+    <link rel="stylesheet" href="casino.css" />
+    <script src="casino.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="addMoneyInputDiv" class="hidden">
+        <input
+          type="number"
+          id="addMoneyInput"
+          placeholder="Сумма пополнения"
+        />
+        <button id="addMoney">Пополнить Счет</button>
+      </div>
+      <div id="selectRateInputDiv" class="hidden">
+        <input type="number" id="selectRateInput" placeholder="Размер ставки" />
+        <button id="selectRate">Выбрать ставку</button>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrapper">
+        <div class="slot">
+          <img id="one" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="two" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="three" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="four" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="five" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="six" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="seven" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="eight" src="images/slot7.png" class="slot-icon" />
+        </div>
+        <div class="slot">
+          <img id="nine" src="images/slot7.png" class="slot-icon" />
+        </div>
+      </div>
+    </section>
+
+    <button id="buttonToSpin">Крутить</button>
+
+    <footer>
+      <span>Кредит: <span id="credit"></span></span>
+      <span>Ставка: <span id="rate"></span></span>
+      <span>Выигрыш: <span id="prize"></span></span>
+    </footer>
+  </body>
+</html>

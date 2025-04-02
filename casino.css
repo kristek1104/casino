@@ -1,0 +1,120 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+#addMoney,
+#selectRate {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  margin: 50px auto;
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper div {
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+#buttonToSpin {
+  background: linear-gradient(90deg, #ff0000, #ff6600);
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+#buttonToSpin:hover {
+  background: linear-gradient(90deg, #ff6600, #ffcc00);
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.7);
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #222;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="number"] {
+  width: 150px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+header div input[type="number"]:focus,
+header div button:focus {
+  outline: none;
+}
+
+.slot img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
